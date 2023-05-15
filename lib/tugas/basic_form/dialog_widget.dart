@@ -68,7 +68,7 @@ class _DialogWidgetState extends State<DialogWiget> {
                   'Open Dialog',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
-                    fontSize: 16,
+                    fontSize: 14,
                   ),
                 ),
               ),
@@ -121,7 +121,7 @@ class _DialogWidgetState extends State<DialogWiget> {
                   'Open BottomSeeet',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
-                    fontSize: 16,
+                    fontSize: 14,
                   ),
                 ),
               ),
@@ -211,7 +211,7 @@ class _DialogWidgetState extends State<DialogWiget> {
                   'Open Bottomsheet confirmation',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
-                    fontSize: 16,
+                    fontSize: 14,
                   ),
                 ),
               ),
@@ -239,7 +239,7 @@ class _DialogWidgetState extends State<DialogWiget> {
                   'Open sncakbar',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
-                    fontSize: 16,
+                    fontSize: 14,
                   ),
                 ),
               ),

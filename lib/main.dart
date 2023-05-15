@@ -28,6 +28,7 @@ import 'package:fic4_flutter_widgets_challenges/tugas/navigation/navigation_push
 import 'package:fic4_flutter_widgets_challenges/tugas/navigation/sliver_widget.dart';
 import 'package:fic4_flutter_widgets_challenges/tugas/navigation/tabbar_widget.dart';
 import 'package:fic4_flutter_widgets_challenges/tugas/stateful_sample/stateless_stateful_widget.dart';
+import 'package:fic4_flutter_widgets_challenges/tugas/main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const TabbarWidget(),
+      home: const TabbarMain(),
       // Scaffold(
       //   appBar: AppBar(
       //     title: const Text('Jago Flutter'),
