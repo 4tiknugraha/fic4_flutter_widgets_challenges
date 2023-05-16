@@ -29,14 +29,14 @@ import 'package:fic4_flutter_widgets_challenges/tugas/navigation/sliver_widget.d
 import 'package:fic4_flutter_widgets_challenges/tugas/navigation/tabbar_widget.dart';
 import 'package:fic4_flutter_widgets_challenges/tugas/stateful_sample/stateless_stateful_widget.dart';
 
-class TabbarMain extends StatefulWidget {
-  const TabbarMain({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  State<TabbarMain> createState() => _TabbarMainState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _TabbarMainState extends State<TabbarMain>
+class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
@@ -61,9 +61,9 @@ class _TabbarMainState extends State<TabbarMain>
         bottom: TabBar(
           isScrollable: true,
           controller: _tabController,
-          labelColor: Colors.black,
-          unselectedLabelColor: Colors.grey,
-          indicatorColor: Colors.black,
+          labelColor: Colors.deepPurpleAccent[700],
+          unselectedLabelColor: Colors.grey.shade400,
+          indicatorColor: Colors.deepPurpleAccent[700],
           tabs: const [
             Tab(
               child: Text(
@@ -135,7 +135,7 @@ class _TabbarMainState extends State<TabbarMain>
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) {
-                              return const AspectRatioWidget();
+                              return const DialogWiget();
                             },
                           ),
                         );
@@ -310,6 +310,693 @@ class _TabbarMainState extends State<TabbarMain>
                       ),
                     ),
                   ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return const GridViewWidget();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        minimumSize: const Size(50, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        shadowColor: Colors.grey[20],
+                        elevation: 5.0,
+                      ),
+                      child: const Text(
+                        'Grid Views',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return ListViewWidget();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        minimumSize: const Size(50, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        shadowColor: Colors.grey[20],
+                        elevation: 5.0,
+                      ),
+                      child: const Text(
+                        'List View Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return const PaddingWidget();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        minimumSize: const Size(50, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        shadowColor: Colors.grey[20],
+                        elevation: 5.0,
+                      ),
+                      child: const Text(
+                        'Padding Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return const RowWidget();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        minimumSize: const Size(50, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        shadowColor: Colors.grey[20],
+                        elevation: 5.0,
+                      ),
+                      child: const Text(
+                        'Row Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return const SizedBoxWidget();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        minimumSize: const Size(50, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        shadowColor: Colors.grey[20],
+                        elevation: 5.0,
+                      ),
+                      child: const Text(
+                        'Size Box Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return const StackWidget();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        minimumSize: const Size(50, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        shadowColor: Colors.grey[20],
+                        elevation: 5.0,
+                      ),
+                      child: const Text(
+                        'Stack Widgett',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return WrapWidget();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        minimumSize: const Size(50, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        shadowColor: Colors.grey[20],
+                        elevation: 5.0,
+                      ),
+                      child: const Text(
+                        'Wrap Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+              ],
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.all(20),
+            child: Column(
+              children: <Widget>[
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const ButtonWidget();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Button Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return CircleAvatarWidget();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        minimumSize: const Size(50, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        shadowColor: Colors.grey[20],
+                        elevation: 5.0,
+                      ),
+                      child: const Text(
+                        'Circle Avatar Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const ContainerWidget();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Container Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const IconWidget();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Icon Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const ImageWidget();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Image Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const ScaffoldWidget();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Scaffold Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const TextWidget();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Text Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+              ],
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.all(20),
+            child: Column(
+              children: <Widget>[
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const BottomNavbarWidget();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Bottom Navbar Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .push(MaterialPageRoute(builder: (context) {
+                          return const DrawerWidget();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        minimumSize: const Size(50, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        shadowColor: Colors.grey[20],
+                        elevation: 5.0,
+                      ),
+                      child: const Text(
+                        'Drawer Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const NavigationPop();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Navigation Pop',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const NavigationPush();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Navigation Push',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const SliverWidget();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Sliver Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const TabbarWidget();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Tabbar Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+              ],
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.all(20),
+            child: Column(
+              children: <Widget>[
+                Row(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.deepPurpleAccent[700],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const StatelessStatefulWidget();
+                            },
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Stateful Widget',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
                 ),
               ],
             ),

@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const TabbarMain(),
+      home: const HomePage(),
       // Scaffold(
       //   appBar: AppBar(
       //     title: const Text('Jago Flutter'),
