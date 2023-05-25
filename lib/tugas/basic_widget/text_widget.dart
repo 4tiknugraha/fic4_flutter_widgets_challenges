@@ -12,8 +12,8 @@ class TextWidget extends StatelessWidget {
       ),
       body: Container(
         padding: const EdgeInsets.all(10.0),
-        child: Column(
-          children: const [
+        child: const Column(
+          children: [
             Text(
               'Discover the most modern furniture',
               style: TextStyle(

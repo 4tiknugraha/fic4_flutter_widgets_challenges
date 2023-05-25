@@ -15,9 +15,9 @@ class PaddingWidget extends StatelessWidget {
         width: 300,
         margin: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(border: Border.all()),
-        child: Column(
+        child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Padding(
               padding: EdgeInsets.only(
                 left: 20,

@@ -59,8 +59,8 @@ class _DrawerWidgetState extends State<DrawerWidget> {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: const [],
+          child: const Column(
+            children: [],
           ),
         ),
       ),

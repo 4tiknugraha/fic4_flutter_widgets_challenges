@@ -11,8 +11,8 @@ class IconWidget extends StatelessWidget {
       ),
       body: Container(
         padding: const EdgeInsets.all(10.0),
-        child: Column(
-          children: const [
+        child: const Column(
+          children: [
             Icon(
               Icons.share,
               size: 32.0,

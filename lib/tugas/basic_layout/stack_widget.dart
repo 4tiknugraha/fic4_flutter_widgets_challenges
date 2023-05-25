@@ -11,11 +11,11 @@ class StackWidget extends StatelessWidget {
       ),
       body: Container(
         padding: const EdgeInsets.all(10.0),
-        child: Column(
+        child: const Column(
           children: [
             Stack(
               clipBehavior: Clip.none,
-              children: const [
+              children: [
                 Icon(
                   Icons.shopping_cart,
                   size: 50,

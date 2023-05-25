@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import
+// ignore_for_file: unused_import, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:fic4_flutter_widgets_challenges/tugas/basic_form/dialog_widget.dart';

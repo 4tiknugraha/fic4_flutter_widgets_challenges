@@ -11,10 +11,10 @@ class ExpandedWidget extends StatelessWidget {
       ),
       body: Container(
         padding: const EdgeInsets.all(10.0),
-        child: Column(
+        child: const Column(
           children: [
             Row(
-              children: const [
+              children: [
                 Icon(Icons.arrow_back_ios),
                 Expanded(
                   child: Padding(

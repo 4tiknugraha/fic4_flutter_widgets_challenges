@@ -42,9 +42,9 @@ class _DialogWidgetState extends State<DialogWiget> {
                     builder: (BuildContext context) {
                       return AlertDialog(
                         title: const Text('Info'),
-                        content: SingleChildScrollView(
+                        content: const SingleChildScrollView(
                           child: ListBody(
-                            children: const [
+                            children: [
                               Text('Your order was placed!'),
                             ],
                           ),
